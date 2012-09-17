@@ -10,7 +10,7 @@
 #include <fstream>
 #include <stdexcept>
 
-#include "ImageFormatPNG.hpp"
+#include "png.hpp"
 #include "Convert0rx.hpp"
 
 int main (int argc, const char * argv[]) try {
@@ -26,7 +26,7 @@ int main (int argc, const char * argv[]) try {
 	{	// lazy way of rewinding the stream ;D.
 		std::ifstream file(argv[1]);
 		if (!file) throw std::runtime_error("File could not be opened");
-		ImageFormats::png::png_stream image(c.width, c.height, std::string(argv[1]) + ".png");
+		png::colored_ostream image(c.width, c.height, std::string(argv[1]) + ".png");
 		c.process(file, image);
 	}
 	

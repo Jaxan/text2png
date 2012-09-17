@@ -7,10 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424F95BC1607B2210003E10A /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424F95BB1607B2210003E10A /* libpng.framework */; };
 		42D0F94E146EA2D4002B1025 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D0F94D146EA2D4002B1025 /* main.cpp */; };
 		42D0F950146EA2D4002B1025 /* text2png.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42D0F94F146EA2D4002B1025 /* text2png.1 */; };
-		42D0F95A146EA4C2002B1025 /* libpng.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D0F959146EA4C2002B1025 /* libpng.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		424F95AF1607B1D90003E10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 424F95A71607B1D90003E10A /* ImageStreams.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4263430B15FA676F00977AF9;
+			remoteInfo = ImageStreams;
+		};
+		424F95B61607B2190003E10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 424F95A71607B1D90003E10A /* ImageStreams.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42771692160649DF00A9BFC8;
+			remoteInfo = ImageStreams;
+		};
+		424F95B91607B2190003E10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 424F95A71607B1D90003E10A /* ImageStreams.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42771693160649DF00A9BFC8;
+			remoteInfo = ImageStreams;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		42D0F947146EA2D4002B1025 /* CopyFiles */ = {
@@ -26,12 +50,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		424F95A71607B1D90003E10A /* ImageStreams.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageStreams.xcodeproj; path = ImageStreams/ImageStreams.xcodeproj; sourceTree = "<group>"; };
+		424F95BB1607B2210003E10A /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpng.framework; path = Library/Frameworks/libpng.framework; sourceTree = SDKROOT; };
 		42D0F949146EA2D4002B1025 /* text2png */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = text2png; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D0F94D146EA2D4002B1025 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		42D0F94F146EA2D4002B1025 /* text2png.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = text2png.1; sourceTree = "<group>"; };
-		42D0F957146EA2FC002B1025 /* ImageFormatPNG.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageFormatPNG.hpp; sourceTree = "<group>"; };
 		42D0F958146EA37D002B1025 /* Convert0rx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Convert0rx.hpp; sourceTree = "<group>"; };
-		42D0F959146EA4C2002B1025 /* libpng.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.dylib; path = usr/local/lib/libpng.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +63,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D0F95A146EA4C2002B1025 /* libpng.dylib in Frameworks */,
+				424F95BC1607B2210003E10A /* libpng.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		424F95A81607B1D90003E10A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				424F95B01607B1D90003E10A /* ImageStreams */,
+				424F95BA1607B2190003E10A /* libImageStreams.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		42D0F93E146EA2D4002B1025 = {
 			isa = PBXGroup;
 			children = (
-				42D0F959146EA4C2002B1025 /* libpng.dylib */,
+				424F95A71607B1D90003E10A /* ImageStreams.xcodeproj */,
+				424F95BB1607B2210003E10A /* libpng.framework */,
 				42D0F94C146EA2D4002B1025 /* text2png */,
 				42D0F94A146EA2D4002B1025 /* Products */,
 			);
@@ -66,7 +100,6 @@
 		42D0F94C146EA2D4002B1025 /* text2png */ = {
 			isa = PBXGroup;
 			children = (
-				42D0F957146EA2FC002B1025 /* ImageFormatPNG.hpp */,
 				42D0F94D146EA2D4002B1025 /* main.cpp */,
 				42D0F958146EA37D002B1025 /* Convert0rx.hpp */,
 				42D0F94F146EA2D4002B1025 /* text2png.1 */,
@@ -88,6 +121,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				424F95B71607B2190003E10A /* PBXTargetDependency */,
 			);
 			name = text2png;
 			productName = text2png;
@@ -100,6 +134,7 @@
 		42D0F940146EA2D4002B1025 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Vadovas;
 			};
 			buildConfigurationList = 42D0F943146EA2D4002B1025 /* Build configuration list for PBXProject "text2png" */;
@@ -112,12 +147,35 @@
 			mainGroup = 42D0F93E146EA2D4002B1025;
 			productRefGroup = 42D0F94A146EA2D4002B1025 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 424F95A81607B1D90003E10A /* Products */;
+					ProjectRef = 424F95A71607B1D90003E10A /* ImageStreams.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				42D0F948146EA2D4002B1025 /* text2png */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		424F95B01607B1D90003E10A /* ImageStreams */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ImageStreams;
+			remoteRef = 424F95AF1607B1D90003E10A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		424F95BA1607B2190003E10A /* libImageStreams.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libImageStreams.a;
+			remoteRef = 424F95B91607B2190003E10A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42D0F945146EA2D4002B1025 /* Sources */ = {
@@ -130,12 +188,22 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		424F95B71607B2190003E10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageStreams;
+			targetProxy = 424F95B61607B2190003E10A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		42D0F951146EA2D4002B1025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -151,7 +219,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = ImageStreams/include/;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -163,6 +231,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -172,7 +242,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/;
+				HEADER_SEARCH_PATHS = ImageStreams/include/;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -211,6 +281,7 @@
 				42D0F955146EA2D4002B1025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

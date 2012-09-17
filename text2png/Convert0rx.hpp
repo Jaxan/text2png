@@ -10,7 +10,7 @@
 #define text2png_Tonemapper_hpp
 
 #include <iostream>
-#include "ImageFormatPNG.hpp"
+#include "png.hpp"
 
 struct Convert0rx {
 	Convert0rx()
@@ -53,7 +53,7 @@ struct Convert0rx {
 		}
 	}
 	
-	void process(std::istream & input, ImageFormats::png::png_stream & image) const {
+	void process(std::istream & input, png::colored_ostream & image) const {
 		std::string str;
 		while(std::getline(input, str)){
 			int i = 0;
@@ -69,7 +69,7 @@ struct Convert0rx {
 	uint32_t width;
 	uint32_t height;
 	
-	typedef ImageFormats::png::png_stream::pixel color;
+	typedef png::colored_ostream::pixel color;
 	color colors[256];
 };
 

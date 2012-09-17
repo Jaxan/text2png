@@ -1,0 +1,3 @@
+[submodule "ImageStreams"]
+	path = ImageStreams
+	url = git://github.com/Jaxan/ImageStreams.git
